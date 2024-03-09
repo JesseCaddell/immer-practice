@@ -1,5 +1,5 @@
 import React from 'react';
-import { useImmer } from 'immer';
+import { useImmer } from 'use-immer';
 
 const UserProfile = () => {
     //state init
@@ -44,7 +44,7 @@ const UserProfile = () => {
             </div>
             {/* Button to toggle newsletter subscription */}
             <button onClick={toggleNewsSub}>
-                {userProfile.preference.newsletter ? 'Unsubscribe' : 'Subscribe'} to Newsletter
+                {userProfile.preferences.newsletter ? 'Unsubscribe' : 'Subscribe'} to Newsletter
             </button>
 
             {/* Display current user profile */}
